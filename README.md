@@ -1,5 +1,5 @@
 # Overall Architecture
-![GitHub Logo](Arch.png)
+![GitHub Logo](Architecture.png)
 
 
 # Requierments
