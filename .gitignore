@@ -1,0 +1,42 @@
+*/target/
+!*/.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+db
+initdb.d
+log
+eventstore
+rabbitmq
+
+### STS ###
+*/.apt_generated
+*/.classpath
+*/.factorypath
+*/.project
+*/.settings
+*/.springBeans
+*/.sts4-cache
+
+### IntelliJ IDEA ###
+*/.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+*/src/uploads/profile_pictures/
+*/nbproject/private/
+*/nbbuild/
+*/dist/
+*/nbdist/
+*/.nb-gradle/
+*/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+*/.vscode/
+
+.idea
+
+AxonServer-4.5.10
