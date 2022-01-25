@@ -1,3 +1,7 @@
+# Overall Architecture
+![GitHub Logo](Arch.png)
+
+
 # Requierments
 
 The ProductsCommandService microservice uses axon server as an event store:
