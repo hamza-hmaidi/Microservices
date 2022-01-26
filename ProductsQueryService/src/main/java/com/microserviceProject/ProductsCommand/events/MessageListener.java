@@ -1,7 +1,7 @@
 package com.microserviceProject.ProductsCommand.events;
 import com.microserviceProject.ProductsCommand.data.ProductsRepository;
 import com.microserviceProject.ProductsCommand.data.ProductEntity;
-import com.microserviceProject.ProductsCommand.helpers.MQConfig;
+import com.microserviceProject.ProductsCommand.config.MQConfig;
 import org.axonframework.eventhandling.gateway.EventGateway;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.BeanUtils;

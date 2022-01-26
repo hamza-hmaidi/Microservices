@@ -1,4 +1,4 @@
-package com.microserviceProject.ProductsCommand.helpers;
+package com.microserviceProject.ProductsCommand.config;
 
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
