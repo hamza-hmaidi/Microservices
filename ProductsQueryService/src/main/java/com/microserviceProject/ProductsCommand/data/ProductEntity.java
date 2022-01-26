@@ -1,29 +1,22 @@
 package com.microserviceProject.ProductsCommand.data;
 
 import lombok.Data;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import java.io.Serializable;
-
+import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 @Data
-@Entity
-@Table(name="products")
-public class ProductEntity implements Serializable {
-
-    private static final long serialVersionUID = -22222245487654L;
-
+@Document(indexName = "productindex")
+public class ProductEntity {
     @Id
-    @Column(unique = true)
-    private  String productId;
+    private String id;
 
-    @Column(unique = true)
+    @Field(type = FieldType.Text)
     private  String title;
 
+    @Field(type = FieldType.Double)
     private  Float price;
 
+    @Field(type = FieldType.Integer)
     private  Integer quantity;
-
 }

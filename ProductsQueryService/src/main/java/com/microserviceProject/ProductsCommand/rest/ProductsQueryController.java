@@ -1,6 +1,5 @@
 package com.microserviceProject.ProductsCommand.rest;
 
-import com.microserviceProject.ProductsCommand.data.ProductsRepository;
 import com.microserviceProject.ProductsCommand.query.FindProductsQuery;
 import org.axonframework.messaging.responsetypes.ResponseTypes;
 import org.axonframework.queryhandling.QueryGateway;
@@ -15,8 +14,7 @@ import java.util.List;
 @RequestMapping("/products")
 public class ProductsQueryController {
 
-    @Autowired
-    ProductsRepository productsRepository;
+
     @Autowired
     QueryGateway queryGateway;
     @GetMapping
