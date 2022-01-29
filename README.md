@@ -32,3 +32,11 @@ Run using ready-to-use docker image:
 ```bash
 docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management
 ```
+
+## ElasticSearch
+
+Run using ready-to-use docker image:
+
+```bash
+sudo docker run -p 9200:9200-e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.10.0
+```
